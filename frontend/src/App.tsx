@@ -11,14 +11,14 @@ import {
 function App() {
   const [totalSpent, setTotalSpent] = useState(0)
 
-  useEffect(() => {
+  /* useEffect(() => {
     async function getAmount () {
-      const data = await fetch("")
+      const data = await fetch("/api/expenses/total-spent")
       const {amount} = await data.json()
       setTotalSpent(amount)
     }
     getAmount()
-  }, [])
+  }, []) */
 
   return (
     
