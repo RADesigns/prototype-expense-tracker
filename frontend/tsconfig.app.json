@@ -4,7 +4,8 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@server/*": ["../server/*"]
     },
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
