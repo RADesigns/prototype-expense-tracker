@@ -16,8 +16,8 @@ function App() {
   useEffect(() => {
     async function getAmount () {
       const res = await api.expenses['total-spent'].$get()
-      const {total} = await res.json()
-      setTotalSpent(total)
+      const data = await res.json()
+      setTotalSpent(data.total)
     }
     getAmount()
   }, [])
