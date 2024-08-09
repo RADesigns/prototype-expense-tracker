@@ -4,7 +4,7 @@ import  { useQueryOptions }  from '@/lib/api'
 
 import { useQuery } from "@tanstack/react-query"
 
-export const Route = createFileRoute('/profile')({
+export const Route = createFileRoute('/_authenticated/profile')({
   component: Profile
 })
 

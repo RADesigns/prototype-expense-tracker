@@ -2,6 +2,8 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import  { api }  from '@/lib/api'
 
+//import  { useQueryOptions }  from '@/lib/api'
+
 import {
   Card,
   CardContent,
@@ -12,7 +14,7 @@ import {
 
 import { useQuery } from "@tanstack/react-query"
 
-export const Route = createFileRoute('/')({
+export const Route = createFileRoute('/_authenticated/')({
   component: App
 })
 

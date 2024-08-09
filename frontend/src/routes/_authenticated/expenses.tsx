@@ -20,7 +20,7 @@ type Expense = {
   amount: number
 }
 
-export const Route = createFileRoute('/expenses')({
+export const Route = createFileRoute('/_authenticated/expenses')({
   component: Expenses
 })
 
