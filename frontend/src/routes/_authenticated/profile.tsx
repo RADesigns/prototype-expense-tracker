@@ -19,6 +19,7 @@ function Profile() {
     
     <div className="flex flex-col bg-background m-auto max-w-5xl gap-y-5">
       Hello {data.user.given_name}
+      <a href="/api/logout">Logout!</a>
     </div>
   )
 }
