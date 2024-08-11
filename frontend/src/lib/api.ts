@@ -8,7 +8,6 @@ export const api = client.api
 
 async function getCurrentUser() {
     const res = await api.me.$get()
-    console.log(res)
     if(!res.ok) {
       throw new Error("server error")
     }

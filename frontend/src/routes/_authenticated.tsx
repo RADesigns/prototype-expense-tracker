@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 
 const Component = () => {
   const { user } = Route.useRouteContext()
-  console.log(user)
   if(!user) {
     return <Login />
   }
