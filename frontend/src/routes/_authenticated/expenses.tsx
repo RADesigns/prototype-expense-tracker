@@ -48,6 +48,7 @@ function Expenses() {
             <TableHead className="w-[100px]">ID</TableHead>
             <TableHead>Expense</TableHead>
             <TableHead>Amount</TableHead>
+            <TableHead>Date</TableHead>
             {/* <TableHead>Method</TableHead>
             <TableHead className="text-right">Amount</TableHead> */}
           </TableRow>
@@ -56,6 +57,7 @@ function Expenses() {
           {isPending
           ? Array(3).fill(0).map((_, i) => (
             <TableRow key={i}>
+              <TableCell><Skeleton className='h-4' /></TableCell>
               <TableCell><Skeleton className='h-4' /></TableCell>
               <TableCell><Skeleton className='h-4' /></TableCell>
               <TableCell><Skeleton className='h-4' /></TableCell>

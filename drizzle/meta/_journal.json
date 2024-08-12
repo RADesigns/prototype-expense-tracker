@@ -15,6 +15,13 @@
       "when": 1723394055095,
       "tag": "0001_normal_shiva",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1723466474833,
+      "tag": "0002_dizzy_morlun",
+      "breakpoints": true
     }
   ]
 }
