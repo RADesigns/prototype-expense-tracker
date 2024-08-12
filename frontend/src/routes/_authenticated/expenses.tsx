@@ -17,7 +17,8 @@ import { Skeleton } from "@/components/ui/skeleton"
 type Expense = {
   id: number,
   title: string,
-  amount: number
+  amount: string,
+  date: string
 }
 
 export const Route = createFileRoute('/_authenticated/expenses')({
@@ -65,8 +66,7 @@ function Expenses() {
               <TableCell>{expense.id}</TableCell>
               <TableCell>{expense.title}</TableCell>
               <TableCell>{expense.amount}</TableCell>
-              {/* <TableCell>{invoice.paymentMethod}</TableCell>
-              <TableCell className="text-right">{invoice.totalAmount}</TableCell> */}
+              <TableCell>{expense.date.split("T")[0]}</TableCell>
             </TableRow>
           ))}
         </TableBody>
